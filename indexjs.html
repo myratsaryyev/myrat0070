@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var  rand_3 = Math.round(Math.random() * 100)
+		// console.log(rand_3, "</br>");
+
+		function myRandom(from, to) {
+			return Math.floor((Math.random() * (to - from + 1)) + from);
+		}
+		var rand_1 = myRandom(10, 99);
+		console.log(rand_1);
+		var rand_2 = myRandom(10, 99);
+		console.log(rand_2);
+
+
+		var a = 1, b = 2, c = 4, d = 4;
+		function formule_d(d){
+			return d *= ++c + b/2 * 3 + +"1";
+		}
+		document.write(formule_d(d), "</br>");
+
+		function formule_c(c){
+			// return d *= ++c + b/2 * 3 + +"1"; //вопрос к учителе
+			return c /= b++ + d++ + ++a - 30%10;
+		}
+		document.write(formule_c(c));
+	
+	</script>
+</body>
+</html>
